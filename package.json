@@ -1,0 +1,16 @@
+{
+	"type": "module",
+	"pnpm": {
+		"overrides": {
+			"vite": "../../vite/packages/vite"
+		}
+	},
+	"devDependencies": {
+		"sirv-cli": "^2.0.2",
+		"vite": "link:../../vite/packages/vite"
+	},
+	"scripts": {
+		"build": "node index.js",
+		"start": "sirv public -s"
+	}
+}
